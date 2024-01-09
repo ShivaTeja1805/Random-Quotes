@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(image1.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.wrapper{
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 50vmax;
+    padding: 30px 30px 25px;
+    border-radius: 2vmin;
+    box-shadow: 0px 0px 20px black;
+    color: #fff;
+}
+
+.wrapper header{
+    font-size: 3vmin;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.wrapper .content{
+    margin:3vmin 0;
+}
+
+.wrapper .content .quote{
+    display: flex;
+    justify-content: center;
+}
+
+.quote .q{
+    font-size: 2vmin;
+    word-break: break-all;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.quote i{
+    font-size: 2vmin;
+}
+.quote i:first-child{
+    margin: 0px 16px 0 0;
+}
+.quote i:last-child{
+    margin: 0 0 0 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.wrapper .author{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2vmin;
+    font-size: 2vmin;
+    font-style: italic;
+    font-family: monospace;
+}
+.author span:first-child{
+    margin: -7px 9px 0 0;
+}
+
+.buttons{
+    border-top: 1px solid #ccc;
+}
+.buttons .features{
+    margin-top: 1vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features ul{
+    display: flex;
+}
+.features ul li{
+    margin: 0 5px;
+    list-style: none;
+    height: 5vmin;
+    width: 5vmin;
+    border: 2px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.features ul li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transform: scale(1.2);
+}
+.features .newquote{
+    border: none;
+    outline: none;
+    padding: 1vmin 2vmin;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.features .newquote:hover{
+    transform: scale(1.2);
+}
+.loading{
+    opacity: 0.5;
+    pointer-events: none;
+}
