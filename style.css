@@ -120,3 +120,15 @@ body{
     opacity: 0.5;
     pointer-events: none;
 }
+
+/* ----------------------------MEDIA QUERIES-------------------------------- */
+@media (max-width:420px){
+    .features ul li{
+       font-size:9px;
+    } 
+    .buttons .features{
+        margin-top:3vmin;
+        
+    }
+    
+}
